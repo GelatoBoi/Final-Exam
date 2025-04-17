@@ -4,7 +4,8 @@ function App() {
   return (
     <>
         <Question1 />   
-        <Question2 /> 
+        <Question2 />   
+
     </>
   )
 }

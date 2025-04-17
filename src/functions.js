@@ -1,47 +1,44 @@
-//Question 1
-function colour_mix(rgb_colour1, rgb_colour2){
-
-    let rgb_colour1 = String;
-    let rgb_colour2 = String;
-
-   return colour_mix();
-}
-
-//Question 2
-function largest_product(val1, val2, val3){
-
-    let value = 0;
-    value += val1*1;
-    value += val2*1;
-    value += val3*1;
-
-    return largest_product(); 
-}
-
-//Question 3
-function day_of_the_week(day_num){
+export function colour_mix(rgb_colour1, rgb_colour2) {
     
-    let day_num = (1 <= int <= 7)
+    if (rgb_colour1 == "red" && rgb_colour2 == "red") {
+        return "red"
+    }
 
-    return day_of_the_week(); 
+    else if (rgb_colour1 == "red" && rgb_colour2 == "green") {
+        return "yellow"
+    }
+
+    else if (rgb_colour1 == "red" && rgb_colour2 == "blue") {
+        return "fuchsia"
+    }
 }
 
-//Question 4
-function pay_raise(status, years, salary){
+export function largest_product(val1, val2, val3) {
     
-    let status = String; 
-    let years = int > 0;
-    let salary = float > 0; 
+    if (val1 =< val2&&val2 <= val3) {
+        return val1*val2
+    }
 
-    return pay_raise(); 
+    else if (val1 >= val2 <= val3) {
+        return val2*val3
+    }
+
+    else if (val1 >= val2 <= val3) {
+        return val1*val2
+    }
 }
 
-//Question 5
-function is_leap(year){
+export function day_of_the_week(val1, val2, val3) {
     
-    let year = (int > 0)
+    if (val1 >= val2 =< val3) {
+        return val1*val3
+    }
 
-    return is_leap(); 
+    else if (val1 =< val2 =< val3) {
+        return val2*val3
+    }
+
+    else if (val1 >= val2 >= val3) {
+        return val1*val2
+    }
 }
-
-export {colour_mix, largest_product, day_of_the_week, pay_raise, is_leap}
